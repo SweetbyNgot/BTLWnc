@@ -1,0 +1,87 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FoodMaster.master.cs" Inherits="FoodMall.FoodMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="style/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="col1">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Home.aspx">
+                <img src="images/logo.png" width="270" height="40"/>
+                </asp:HyperLink>
+            </div>
+            <div class="col2">
+                <div class="row2">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="Cart.aspx" Text="CART" class="fontMenu"/>
+                </div>
+                <div class="row2">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="SignIn.aspx" Text="SIGN IN" class="fontMenu"/>
+                </div>
+                <div class="row2">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="SignUp.aspx" Text="SIGN UP" class="fontMenu"/>
+                </div>
+            </div>                
+        </div>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="Content" runat="server"/>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <img src="images/location.png" width="25" height="35"/>
+                <p class="fontVer">
+                    TRỤ SỞ
+                </p>
+                <p class="fontCal">
+                    96 Định Công, Hoàng Mai, Hà Nội
+                </p>
+            </div>
+            <div class="column">
+                <img src="images/contact.png" width="45" height="35"/>
+                <p class="fontVer">
+                    LIÊN HỆ
+                </p>
+                <p class="fontCal">
+                    Hotline: 0987654321
+                </p>
+
+            </div>
+            <div class="column">
+                <img src="images/mail.png" width="40" height="35"/>
+                <p class="fontVer">
+                    GỬI EMAIL CHO CHÚNG TÔI
+                </p>
+                <p class="fontCal">
+                    FoodMall@gmail.com
+                </p>
+
+            </div>
+            <div class="column">
+                <img src="images/care.png" width="45" height="35"/>
+                <p class="fontVer">
+                    CHĂM SÓC KHÁCH HÀNG
+                </p>
+                <p class="fontCal">
+                    Hotline: 0964636522
+                </p>
+
+            </div>
+        </div>
+        <div class="ft">
+            <img src="images/logo.png" width="140" height="20"/>
+            <p class="cpr">
+                &#169; Copy right by FoodMall
+            </p>
+        </div>
+    </footer>
+        
+</body>
+</html>
